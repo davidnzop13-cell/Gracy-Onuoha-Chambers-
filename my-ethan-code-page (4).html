@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gracy-Onuoha Chambers | Legal Services</title>
+
+    <meta
+        name="description"
+        content="Gracy-Onuoha Chambers - Professional legal services led by Honourable Barrister Innocent Ndidi Onuoha-Okoro."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+<style> /* ===============================
+   GLOBAL VARIABLES
+================================ */
+
+:root {
+
+    --ruby: #8b0000;
+    --ruby-light: #b11226;
+
+    --emerald: #006b3c;
+    --emerald-light: #008f5a;
+
+    --gold: #d4af37;
+    --gold-light: #f4d77d;
+
+    --black: #080808;
+    --dark: #111111;
+
+    --white: #ffffff;
+    --cream: #fffaf0;
+
+}
+
+
+/* ===============================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212, 175, 55, 0.08),
+            transparent 40%
+        ),
+        var(--black);
+
+    color: var(--white);
+
+    line-height: 1.7;
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 78px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 6%;
+
+    z-index: 1000;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(139,0,0,.95),
+            rgba(0,107,60,.95)
+        );
+
+    border-bottom: 2px solid var(--gold);
+
+    backdrop-filter: blur(12px);
+}
+
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.logo,
+.footer-logo {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--gold);
+
+    color: var(--gold-light);
+
+    font-family: "Cinzel", serif;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ruby),
+            var(--emerald)
+        );
+
+    box-shadow:
+        0 0 15px rgba(212,175,55,.35);
+}
+
+
+.logo-area h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+}
+
+
+.logo-area span {
+
+    color: var(--gold-light);
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+
+nav a:hover {
+
+    color: var(--gold-light);
+
+}
+
+
+.menu-btn {
+
+    display: none;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+}
+
+
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(139,0,0,.6),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(0,107,60,.55),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #100000,
+            #001a0f,
+            #151000
+        );
+}
+
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid rgba(212,175,55,.25);
+
+    border-radius: 50%;
+
+    animation: rotate 25s linear infinite;
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding: 30px;
+}
+
+
+.legal-symbol {
+
+    font-size: 65px;
+
+    color: var(--gold);
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 0 25px rgba(212,175,55,.5);
+}
+
+
+.welcome {
+
+    color: var(--gold-light);
+
+    letter-spacing: 5px;
+
+    font-size: 13px;
+}
+
+
+.hero h1 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(40px, 7vw, 85px);
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--gold-light),
+            white,
+            var(--gold)
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    font-size: .65em;
+
+    color: var(--gold);
+}
+
+
+.gold-line,
+.heading-line {
+
+    width: 100px;
+
+    height: 3px;
+
+    background: var(--gold);
+
+    margin: 20px auto;
+}
+
+
+.hero-description {
+
+    font-size: 18px;
+
+    color: #eee;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.btn {
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.btn.primary {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ruby),
+            var(--ruby-light)
+        );
+
+    border: 1px solid var(--gold);
+}
+
+
+.btn.secondary {
+
+    color: white;
+
+    border: 1px solid var(--gold);
+
+    background:
+        rgba(0,107,60,.35);
+}
+
+
+.btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(212,175,55,.2);
+}
+
+
+/* ===============================
+   SECTIONS
+================================ */
+
+.section {
+
+    padding: 100px 7%;
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.section-heading > p {
+
+    color: var(--gold);
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+}
+
+
+.section-heading h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(30px, 5vw, 50px);
+
+    margin-top: 10px;
+}
+
+
+.section-heading h2 span {
+
+    color: var(--gold);
+}
+
+
+/* ===============================
+   ABOUT
+================================ */
+
+.about {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139,0,0,.15),
+            rgba(0,107,60,.15)
+        );
+}
+
+
+.about-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 30px;
+}
+
+
+.about-card,
+.about-highlight {
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(212,175,55,.4);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(139,0,0,.25),
+            rgba(0,107,60,.2)
+        );
+
+    backdrop-filter: blur(10px);
+}
+
+
+.scale-icon {
+
+    font-size: 50px;
+
+    color: var(--gold);
+
+    margin-bottom: 15px;
+}
+
+
+.about-card h3 {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--gold-light);
+
+    margin-bottom: 15px;
+}
+
+
+.about-card p {
+
+    color: #ddd;
+
+    margin-bottom: 15px;
+}
+
+
+.about-highlight {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--ruby),
+            var(--emerald)
+        );
+}
+
+
+.about-highlight span {
+
+    color: var(--gold-light);
+
+    letter-spacing: 5px;
+}
+
+
+.about-highlight h3 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 30px;
+
+    margin-top: 15px;
+}
+
+
+/* ===============================
+   SERVICES
+================================ */
+
+.services-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.service-card {
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(212,175,55,.3);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(139,0,0,.18),
+            rgba(0,107,60,.18)
+        );
+
+    transition: .35s;
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.4);
+}
+
+
+.service-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+    color: var(--gold);
+}
+
+
+.service-card h3 {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--gold-light);
+
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+
+    color: #ccc;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+.service-card button,
+.appointment-btn {
+
+    border: 1px solid var(--gold);
+
+    background:
+        var(--ruby);
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+.service-card button:hover,
+.appointment-btn:hover {
+
+    background: var(--emerald);
+
+    transform: scale(1.05);
+}
+
+
+/* ===============================
+   LEADERSHIP
+================================ */
+
+.leadership {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139,0,0,.15),
+            rgba(0,107,60,.2)
+        );
+}
+
+
+.leader-card {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    border-radius: 25px;
+
+    border: 2px solid var(--gold);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139,0,0,.4),
+            rgba(0,107,60,.35)
+        );
+}
+
+
+.leader-symbol {
+
+    min-width: 120px;
+
+    height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 55px;
+
+    color: var(--gold);
+
+    border: 2px solid var(--gold);
+}
+
+
+.position {
+
+    color: var(--gold);
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+}
+
+
+.leader-info h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 30px;
+
+    margin: 10px 0;
+
+    color: white;
+}
+
+
+.leader-info p {
+
+    color: #ddd;
+}
+
+
+/* ===============================
+   CONTACT
+================================ */
+
+.contact-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.contact-card {
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(212,175,55,.4);
+
+    background:
+        rgba(139,0,0,.18);
+}
+
+
+.contact-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+    color: var(--gold);
+}
+
+
+.contact-card h3 {
+
+    font-family: "Cinzel", serif;
+
+    margin-bottom: 10px;
+}
+
+
+.contact-card a {
+
+    color: var(--gold-light);
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #360000,
+            #00351f
+        );
+
+    border-top: 2px solid var(--gold);
+}
+
+
+.footer-logo {
+
+    margin: auto auto 15px;
+}
+
+
+footer h2 {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--gold-light);
+
+    letter-spacing: 2px;
+}
+
+
+footer p {
+
+    color: #ddd;
+}
+
+
+.footer-line {
+
+    width: 80px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    margin: 20px auto;
+}
+
+
+.copyright {
+
+    font-size: 12px;
+
+    opacity: .7;
+}
+
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+@keyframes rotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 850px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    nav {
+
+        position: absolute;
+
+        top: 78px;
+
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px;
+
+        background:
+            linear-gradient(
+                135deg,
+                var(--ruby),
+                var(--emerald)
+            );
+    }
+
+
+    nav.active {
+        display: flex;
+    }
+
+
+    nav a {
+        padding: 10px;
+    }
+
+
+    .about-container,
+    .services-grid,
+    .contact-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .leader-card {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .header {
+
+        padding: 0 20px;
+    }
+
+
+    .logo-area h2 {
+
+        font-size: 13px;
+    }
+
+
+    .logo-area span {
+
+        font-size: 8px;
+    }
+
+
+    .section {
+
+        padding: 75px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+
+    .leader-info h2 {
+
+        font-size: 23px;
+    }
+
+}
+/* =========================================
+   GRACY AI ASSISTANT
+========================================= */
+
+.gracy-ai-button {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 2000;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 14px 20px;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 40px;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ruby),
+            var(--emerald)
+        );
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.45),
+        0 0 20px rgba(212,175,55,.25);
+
+    transition: .3s;
+}
+
+
+.gracy-ai-button:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.55),
+        0 0 30px rgba(212,175,55,.4);
+}
+
+
+.gracy-ai-icon {
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: var(--black);
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CHAT WINDOW
+========================================= */
+
+.gracy-chat {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 90px;
+
+    width: 390px;
+
+    max-width: calc(100vw - 30px);
+
+    height: 570px;
+
+    z-index: 1999;
+
+    display: none;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    border: 1px solid var(--gold);
+
+    background:
+        linear-gradient(
+            145deg,
+            #100707,
+            #06150e
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.7);
+}
+
+
+.gracy-chat.active {
+
+    display: flex;
+
+    animation: gracyOpen .3s ease;
+
+}
+
+
+@keyframes gracyOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px)
+            scale(.96);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =========================================
+   CHAT HEADER
+========================================= */
+
+.gracy-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ruby),
+            var(--emerald)
+        );
+
+    border-bottom: 1px solid var(--gold);
+}
+
+
+.gracy-profile {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.gracy-avatar {
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold),
+            #fff0a0
+        );
+
+    color: var(--black);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    border: 2px solid white;
+}
+
+
+.gracy-header h3 {
+
+    font-family: "Cinzel", serif;
+
+    margin: 0;
+
+    color: white;
+}
+
+
+.gracy-header span {
+
+    font-size: 10px;
+
+    color: var(--gold-light);
+}
+
+
+.gracy-close {
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.gracy-messages {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.gracy-message {
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: flex-start;
+}
+
+
+.message-avatar {
+
+    min-width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: var(--black);
+
+    font-weight: bold;
+}
+
+
+.message-content {
+
+    max-width: 85%;
+
+    padding: 11px 14px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    border: 1px solid rgba(212,175,55,.2);
+}
+
+
+.message-content strong {
+
+    display: block;
+
+    color: var(--gold-light);
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+
+.message-content p {
+
+    margin: 0;
+
+    color: #eee;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.gracy-message.user {
+
+    justify-content: flex-end;
+}
+
+
+.gracy-message.user .message-content {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ruby),
+            #650000
+        );
+
+    border-color: var(--gold);
+}
+
+
+.gracy-message.user .message-avatar {
+
+    display: none;
+}
+
+
+/* =========================================
+   QUICK ACTIONS
+========================================= */
+
+.gracy-quick-actions {
+
+    display: flex;
+
+    gap: 7px;
+
+    overflow-x: auto;
+
+    padding: 10px 15px;
+
+    border-top: 1px solid rgba(212,175,55,.15);
+}
+
+
+.gracy-quick-actions button {
+
+    white-space: nowrap;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    border: 1px solid var(--gold);
+
+    background: transparent;
+
+    color: var(--gold-light);
+
+    cursor: pointer;
+
+    font-size: 11px;
+}
+
+
+.gracy-quick-actions button:hover {
+
+    background: var(--emerald);
+
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.gracy-input-area {
+
+    display: flex;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    border-top: 1px solid rgba(212,175,55,.3);
+
+    background: rgba(0,0,0,.25);
+}
+
+
+.gracy-input-area input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px 14px;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(212,175,55,.4);
+
+    outline: none;
+
+    background: #111;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+.gracy-input-area input:focus {
+
+    border-color: var(--gold);
+}
+
+
+.gracy-input-area button {
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--gold);
+
+    background: var(--ruby);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+.gracy-input-area button:hover {
+
+    background: var(--emerald);
+
+}
+
+
+/* =========================================
+   TYPING INDICATOR
+========================================= */
+
+.typing {
+
+    display: flex;
+
+    gap: 4px;
+
+    padding: 5px;
+}
+
+
+.typing span {
+
+    width: 6px;
+    height: 6px;
+
+    background: var(--gold);
+
+    border-radius: 50%;
+
+    animation: typing .8s infinite alternate;
+}
+
+
+.typing span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+
+@keyframes typing {
+
+    from {
+        opacity: .2;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-4px);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .gracy-chat {
+
+        right: 10px;
+        bottom: 80px;
+
+        width: calc(100vw - 20px);
+
+        height: 70vh;
+
+    }
+
+
+    .gracy-ai-button {
+
+        right: 15px;
+        bottom: 15px;
+
+        padding: 12px 16px;
+
+    }
+
+}</style></head>
+<!-- ===============================
+     GRACY AI ASSISTANT
+================================ -->
+
+<button class="gracy-ai-button" id="gracyOpen">
+    <span class="gracy-ai-icon">✦</span>
+    <span>Gracy AI</span>
+</button>
+
+<div class="gracy-chat" id="gracyChat">
+
+    <div class="gracy-header">
+
+        <div class="gracy-profile">
+            <div class="gracy-avatar">G</div>
+
+            <div>
+                <h3>Gracy</h3>
+                <span>Chambers AI Assistant</span>
+            </div>
+        </div>
+
+        <button id="gracyClose" class="gracy-close">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="gracy-messages" id="gracyMessages">
+
+        <div class="gracy-message bot">
+
+            <div class="message-avatar">
+                G
+            </div>
+
+            <div class="message-content">
+
+                <strong>Gracy</strong>
+
+                <p>
+                    Welcome to Gracy-Onuoha Chambers.
+                    I'm Gracy, your virtual chambers assistant.
+                    How can I help you today?
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="gracy-quick-actions">
+
+        <button onclick="askGracy('What services do you offer?')">
+            Services
+        </button>
+
+        <button onclick="askGracy('How can I contact the chambers?')">
+            Contact
+        </button>
+
+        <button onclick="askGracy('I want an appointment')">
+            Appointment
+        </button>
+
+    </div>
+
+
+    <div class="gracy-input-area">
+
+        <input
+            type="text"
+            id="gracyInput"
+            placeholder="Ask Gracy something..."
+            autocomplete="off"
+        >
+
+        <button id="gracySend">
+            ➤
+        </button>
+
+    </div>
+
+</div>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-area">
+
+            <div class="logo">
+                G-O
+            </div>
+
+            <div>
+                <h2>GRACY-ONUOHA</h2>
+                <span>CHAMBERS</span>
+            </div>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav id="navbar">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Leadership</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="legal-symbol">⚖</div>
+
+            <p class="welcome">
+                WELCOME TO
+            </p>
+
+            <h1>
+                GRACY-ONUOHA
+                <span>CHAMBERS</span>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="hero-description">
+                Professional Legal Services.
+                Justice. Integrity. Excellence.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#services" class="btn primary">
+                    Our Services
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about section" id="about">
+
+        <div class="section-heading">
+
+            <p>ABOUT OUR CHAMBERS</p>
+
+            <h2>
+                Justice With
+                <span>Integrity</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="about-container">
+
+            <div class="about-card">
+
+                <div class="scale-icon">
+                    ⚖
+                </div>
+
+                <h3>
+                    Gracy-Onuoha Chambers
+                </h3>
+
+                <p>
+                    Gracy-Onuoha Chambers is a professional legal practice
+                    committed to providing reliable, ethical and effective
+                    legal services to individuals, businesses and organizations.
+                </p>
+
+                <p>
+                    Our approach is built around integrity, professionalism,
+                    confidentiality and a strong commitment to justice.
+                </p>
+
+            </div>
+
+
+            <div class="about-highlight">
+
+                <span>CHAMBERS</span>
+
+                <h3>
+                    Professionalism.
+                    <br>
+                    Integrity.
+                    <br>
+                    Justice.
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services section" id="services">
+
+        <div class="section-heading">
+
+            <p>WHAT WE DO</p>
+
+            <h2>
+                Our Legal
+                <span>Services</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚖
+                </div>
+
+                <h3>
+                    Litigation
+                </h3>
+
+                <p>
+                    Legal representation and advocacy in civil and
+                    commercial disputes.
+                </p>
+
+                <button onclick="serviceInfo('Litigation')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📜
+                </div>
+
+                <h3>
+                    Legal Consultancy
+                </h3>
+
+                <p>
+                    Professional legal advice and guidance for individuals,
+                    businesses and organizations.
+                </p>
+
+                <button onclick="serviceInfo('Legal Consultancy')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏢
+                </div>
+
+                <h3>
+                    Corporate Law
+                </h3>
+
+                <p>
+                    Legal support for companies, businesses, contracts and
+                    corporate transactions.
+                </p>
+
+                <button onclick="serviceInfo('Corporate Law')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📄
+                </div>
+
+                <h3>
+                    Legal Documentation
+                </h3>
+
+                <p>
+                    Preparation and review of agreements, contracts and
+                    other legal documents.
+                </p>
+
+                <button onclick="serviceInfo('Legal Documentation')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    Property Law
+                </h3>
+
+                <p>
+                    Legal assistance relating to property transactions,
+                    ownership and land matters.
+                </p>
+
+                <button onclick="serviceInfo('Property Law')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    👨‍⚖️
+                </div>
+
+                <h3>
+                    Legal Representation
+                </h3>
+
+                <p>
+                    Professional representation and advocacy for clients
+                    in appropriate legal proceedings.
+                </p>
+
+                <button onclick="serviceInfo('Legal Representation')">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LEADERSHIP ================= -->
+
+    <section class="leadership section" id="team">
+
+        <div class="section-heading">
+
+            <p>LEADERSHIP</p>
+
+            <h2>
+                Head of
+                <span>Chambers</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="leader-card">
+
+            <div class="leader-symbol">
+                ⚖
+            </div>
+
+            <div class="leader-info">
+
+                <span class="position">
+                    OWNER / PRINCIPAL
+                </span>
+
+                <h2>
+                    Honourable Barrister
+                    <br>
+                    Innocent Ndidi
+                    <br>
+                    Onuoha-Okoro
+                </h2>
+
+                <p>
+                    Leading Gracy-Onuoha Chambers with a commitment to
+                    professional legal practice, integrity and justice.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact section" id="contact">
+
+        <div class="section-heading">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>
+                Contact
+                <span>Our Chambers</span>
+            </h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <a href="tel:08037162407">
+                    08037162407
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ⚖
+                </div>
+
+                <h3>
+                    Legal Consultation
+                </h3>
+
+                <p>
+                    Contact our chambers to discuss your legal needs.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Appointment
+                </h3>
+
+                <button
+                    class="appointment-btn"
+                    onclick="bookAppointment()"
+                >
+                    Request Appointment
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            G-O
+        </div>
+
+        <h2>
+            GRACY-ONUOHA CHAMBERS
+        </h2>
+
+        <p>
+            Professional Legal Services
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © <span id="year"></span>
+            Gracy-Onuoha Chambers.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+<script>// =====================================
+// MOBILE NAVIGATION
+// =====================================
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+});
+
+
+// Close menu when a link is clicked
+
+document.querySelectorAll("#navbar a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+    });
+
+});
+
+
+// =====================================
+// SERVICE INFORMATION
+// =====================================
+
+function serviceInfo(service) {
+
+    alert(
+        "Gracy-Onuoha Chambers\n\n" +
+        service +
+        "\n\nPlease contact our chambers on 08037162407 " +
+        "for further information or consultation."
+    );
+
+}
+
+
+// =====================================
+// APPOINTMENT
+// =====================================
+
+function bookAppointment() {
+
+    const phoneNumber = "08037162407";
+
+    const message =
+        "Hello Gracy-Onuoha Chambers, " +
+        "I would like to request a legal consultation/appointment.";
+
+    const whatsappURL =
+        "https://wa.me/2348037162407?text=" +
+        encodeURIComponent(message);
+
+    const choice = confirm(
+        "Contact Gracy-Onuoha Chambers to request an appointment?"
+    );
+
+    if (choice) {
+
+        window.open(whatsappURL, "_blank");
+
+    }
+
+}
+
+
+// =====================================
+// CURRENT YEAR
+// =====================================
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+// =====================================
+// SCROLL REVEAL
+// =====================================
+
+const cards = document.querySelectorAll(
+    ".service-card, .contact-card, .about-card, .leader-card"
+);
+
+const observer = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+
+                entry.target.style.transform =
+                    "translateY(0)";
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.15
+    }
+
+);
+
+
+cards.forEach(card => {
+
+    card.style.opacity = "0";
+
+    card.style.transform =
+        "translateY(30px)";
+
+    card.style.transition =
+        "opacity .7s ease, transform .7s ease";
+
+    observer.observe(card);
+
+});
+// =========================================
+// GRACY AI ASSISTANT
+// =========================================
+
+const gracyOpen = document.getElementById("gracyOpen");
+const gracyClose = document.getElementById("gracyClose");
+
+const gracyChat = document.getElementById("gracyChat");
+
+const gracyInput = document.getElementById("gracyInput");
+const gracySend = document.getElementById("gracySend");
+
+const gracyMessages =
+    document.getElementById("gracyMessages");
+
+
+// =========================================
+// OPEN GRACY
+// =========================================
+
+gracyOpen.addEventListener("click", () => {
+
+    gracyChat.classList.add("active");
+
+    gracyInput.focus();
+
+});
+
+
+// =========================================
+// CLOSE GRACY
+// =========================================
+
+gracyClose.addEventListener("click", () => {
+
+    gracyChat.classList.remove("active");
+
+});
+
+
+// =========================================
+// SEND MESSAGE
+// =========================================
+
+gracySend.addEventListener("click", sendToGracy);
+
+
+gracyInput.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+
+        sendToGracy();
+
+    }
+
+});
+
+
+function sendToGracy() {
+
+    const message =
+        gracyInput.value.trim();
+
+    if (!message) return;
+
+
+    addUserMessage(message);
+
+    gracyInput.value = "";
+
+
+    showTyping();
+
+
+    setTimeout(() => {
+
+        removeTyping();
+
+        const response =
+            getGracyResponse(message);
+
+        addGracyMessage(response);
+
+    }, 900);
+
+}
+
+
+// =========================================
+// QUICK QUESTIONS
+// =========================================
+
+function askGracy(question) {
+
+    gracyChat.classList.add("active");
+
+    addUserMessage(question);
+
+    showTyping();
+
+    setTimeout(() => {
+
+        removeTyping();
+
+        addGracyMessage(
+            getGracyResponse(question)
+        );
+
+    }, 800);
+
+}
+
+
+// =========================================
+// USER MESSAGE
+// =========================================
+
+function addUserMessage(message) {
+
+    const messageElement =
+        document.createElement("div");
+
+    messageElement.className =
+        "gracy-message user";
+
+    messageElement.innerHTML = `
+
+        <div class="message-content">
+
+            <strong>You</strong>
+
+            <p>
+                ${escapeHTML(message)}
+            </p>
+
+        </div>
+
+    `;
+
+    gracyMessages.appendChild(
+        messageElement
+    );
+
+    scrollGracyToBottom();
+
+}
+
+
+// =========================================
+// GRACY MESSAGE
+// =========================================
+
+function addGracyMessage(message) {
+
+    const messageElement =
+        document.createElement("div");
+
+    messageElement.className =
+        "gracy-message bot";
+
+    messageElement.innerHTML = `
+
+        <div class="message-avatar">
+            G
+        </div>
+
+        <div class="message-content">
+
+            <strong>Gracy</strong>
+
+            <p>
+                ${message}
+            </p>
+
+        </div>
+
+    `;
+
+    gracyMessages.appendChild(
+        messageElement
+    );
+
+    scrollGracyToBottom();
+
+}
+
+
+// =========================================
+// TYPING
+// =========================================
+
+function showTyping() {
+
+    const typing =
+        document.createElement("div");
+
+    typing.id = "gracyTyping";
+
+    typing.className =
+        "gracy-message bot";
+
+    typing.innerHTML = `
+
+        <div class="message-avatar">
+            G
+        </div>
+
+        <div class="message-content">
+
+            <strong>Gracy</strong>
+
+            <div class="typing">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </div>
+
+    `;
+
+    gracyMessages.appendChild(typing);
+
+    scrollGracyToBottom();
+
+}
+
+
+function removeTyping() {
+
+    const typing =
+        document.getElementById("gracyTyping");
+
+    if (typing) {
+
+        typing.remove();
+
+    }
+
+}
+
+
+// =========================================
+// GRACY RESPONSE ENGINE
+// =========================================
+
+function getGracyResponse(message) {
+
+    const text =
+        message.toLowerCase();
+
+
+    // Greeting
+
+    if (
+        text.includes("hello") ||
+        text.includes("hi") ||
+        text.includes("hey") ||
+        text.includes("good morning") ||
+        text.includes("good afternoon")
+    ) {
+
+        return `
+            Hello! 👋 I'm <strong>Gracy</strong>,
+            the virtual assistant for
+            Gracy-Onuoha Chambers.
+            How may I assist you today?
+        `;
+
+    }
+
+
+    // Services
+
+    if (
+        text.includes("service") ||
+        text.includes("legal service") ||
+        text.includes("what do you do")
+    ) {
+
+        return `
+            Gracy-Onuoha Chambers provides professional
+            legal services including litigation, legal
+            consultancy, corporate law, legal documentation,
+            property law and legal representation.
+            <br><br>
+            Call <strong>08037162407</strong> for more information.
+        `;
+
+    }
+
+
+    // Contact
+
+    if (
+        text.includes("contact") ||
+        text.includes("phone") ||
+        text.includes("number") ||
+        text.includes("call")
+    ) {
+
+        return `
+            You can contact Gracy-Onuoha Chambers on
+            <strong>08037162407</strong>.
+            <br><br>
+            I'm happy to help you with general information
+            about the chambers.
+        `;
+
+    }
+
+
+    // Appointment
+
+    if (
+        text.includes("appointment") ||
+        text.includes("consultation") ||
+        text.includes("book")
+    ) {
+
+        return `
+            You can request an appointment with
+            Gracy-Onuoha Chambers by calling
+            <strong>08037162407</strong>.
+            <br><br>
+            Please provide the chamber with your preferred
+            appointment date and the general nature of your
+            legal enquiry.
+        `;
+
+    }
+
+
+    // Owner
+
+    if (
+        text.includes("owner") ||
+        text.includes("principal") ||
+        text.includes("who owns") ||
+        text.includes("barrister")
+    ) {
+
+        return `
+            The owner/principal of Gracy-Onuoha Chambers is
+            <strong>
+            Honourable Barrister Innocent Ndidi
+            Onuoha-Okoro
+            </strong>.
+        `;
+
+    }
+
+
+    // Location
+
+    if (
+        text.includes("location") ||
+        text.includes("address") ||
+        text.includes("where")
+    ) {
+
+        return `
+            I don't currently have the chamber's physical
+            address in my information.
+            <br><br>
+            Please contact the chambers on
+            <strong>08037162407</strong> for the current
+            office address.
+        `;
+
+    }
+
+
+    // Legal advice protection
+
+    if (
+        text.includes("should i sue") ||
+        text.includes("am i going to win") ||
+        text.includes("guilty") ||
+        text.includes("innocent") ||
+        text.includes("legal advice")
+    ) {
+
+        return `
+            I can provide general information, but I should
+            not make a legal determination about your specific
+            situation.
+            <br><br>
+            For advice about your particular circumstances,
+            please speak directly with a qualified lawyer at
+            Gracy-Onuoha Chambers.
+            <br><br>
+            <strong>08037162407</strong>
+        `;
+
+    }
+
+
+    // Default response
+
+    return `
+        Thank you for your message. I'm Gracy, the virtual
+        assistant for Gracy-Onuoha Chambers.
+        <br><br>
+        I can help with general information about our
+        <strong>services, appointments, contact details
+        and chambers information</strong>.
+        <br><br>
+        For a specific legal matter, please contact the
+        chambers on <strong>08037162407</strong>.
+    `;
+
+}
+
+
+// =========================================
+// SECURITY
+// =========================================
+
+function escapeHTML(text) {
+
+    const div =
+        document.createElement("div");
+
+    div.textContent = text;
+
+    return div.innerHTML;
+
+}
+
+
+// =========================================
+// AUTO SCROLL
+// =========================================
+
+function scrollGracyToBottom() {
+
+    gracyMessages.scrollTop =
+        gracyMessages.scrollHeight;
+
+}</script></body>
+</html>
